@@ -1,5 +1,5 @@
 /*
-
+-> Topological Sort (Kahn's Algorithm)
 ->  Topological sorting is an ordering of the vertices of a 
     Directed Acyclic Graph (DAG) such that for every 
     directed edge u → v, vertex u appears before v in the ordering.
@@ -9,6 +9,7 @@
 */
 #include <bits/stdc++.h>
 using namespace std;
+
 vector<int> TopologicalSort(vector<vector<int>>& adj) {
     int n = adj.size();
     vector<int> indegree(n, 0), res;
