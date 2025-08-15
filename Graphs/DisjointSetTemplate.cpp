@@ -14,8 +14,8 @@ class DisjointSet{
 	}
 	
 	void merge(int u , int v){
-		int ult_par_u = findUPar(u);
-		int ult_par_v = findUPar(v);
+		int ult_par_u = find(u);
+		int ult_par_v = find(v);
 
 		if(ult_par_u == ult_par_v) return ;
 
